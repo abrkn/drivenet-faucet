@@ -12,7 +12,7 @@ const { safeFunction } = require('safep');
 
 require('dotenv').config();
 
-const REDIS_KEY_PREFIX = defaultTo(process.env.REDIS_KEY_PREFIX, `${packageName}_`);
+const REDIS_KEY_PREFIX = defaultTo(process.env.REDIS_KEY_PREFIX, packageName);
 const FAUCET_TTL = +defaultTo(process.env.FAUCET_TTL, 60 * 60 * 24);
 const DRIP_AMOUNT = +defaultTo(process.env.DRIP_AMOUNT, 0.01);
 
