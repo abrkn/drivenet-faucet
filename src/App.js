@@ -71,7 +71,7 @@ class App extends Component {
           )}
           <p>Type in your Drivenet address below:</p>
           <input type="text" value={this.state.address} onChange={_ => this.setState({ address: _.target.value })} />
-          <button type="submit" xdisabled={(false && !this.state.address) || !this.state.recaptchaToken}>
+          <button type="submit" disabled={!this.state.address}>
             Give Me Free Money
           </button>
         </form>
