@@ -31,6 +31,9 @@
       "stage-0"
     ]
   },
+  "engines": {
+    "node": "9.9.x"
+  },
   "scripts": {
     "transpile-modules": "for f in node_modules/superagent/lib/*.js; do p=$f; babel -o $p $p; done",
     "heroku-postbuild": "npm run build",
