@@ -1,0 +1,26 @@
+{
+  "name": "drivenet-faucet",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:8080",
+  "dependencies": {
+    "bitcoin": "3.0.1",
+    "body-parser": "1.18.3",
+    "dotenv": "6.0.0",
+    "express": "4.16.3",
+    "lodash": "4.17.11",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-recaptcha-google": "1.1.1",
+    "react-scripts": "1.1.5",
+    "redis": "2.8.0",
+    "safep": "1.2.6",
+    "superagent": "4.0.0-beta.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
