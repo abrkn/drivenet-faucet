@@ -25,7 +25,7 @@ const bitcoinClient = new bitcoin.Client({
   pass: bitcoinUrl.password || 'password',
 });
 
-const redisKey = _ => `${REDIS_KEY_PREFIX}._`;
+const redisKey = _ => `${REDIS_KEY_PREFIX}.${_}`;
 const redisClient = redis.createClient(process.env.REDIS_URL);
 
 for (const name of ['ttl', 'setnx', 'expire', 'del']) {
