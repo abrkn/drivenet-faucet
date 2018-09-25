@@ -35,11 +35,6 @@ for (const name of ['ttl', 'setnx', 'expire', 'del']) {
 const bitcoinCmdAsync = promisify(bitcoinClient.cmd.bind(bitcoinClient));
 const bitcoinCmdSafe = safeFunction(bitcoinCmdAsync);
 
-// const redisTtlAsync = promisify(redisClient.ttl.bind(redisClient));
-// const redisSetnxAsync = promisify(redisClient.setnx.bind(redisClient));
-// const redisExpireAsync = promisify(redisClient.expire.bind(redisClient));
-// const redisDelAsync = promisify(redisClient.del.bind(redisClient));
-
 const app = express();
 app.enable('trust proxy');
 app.use(express.static(path.join(__dirname, 'build')));
